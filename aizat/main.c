@@ -6,7 +6,7 @@
 /*   By: mazizan <mazizan@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 18:05:27 by mazizan           #+#    #+#             */
-/*   Updated: 2021/05/23 12:15:31 by mazizan          ###   ########.fr       */
+/*   Updated: 2021/05/23 16:45:01 by lzheng-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@ void	rush(int x, int y);
 
 int	main(void)
 {
-	rush(99, 99);
+	rush(6, 4);
 	return (0);
 }
