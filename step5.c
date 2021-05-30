@@ -6,30 +6,34 @@
 /*   By: wlow <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 14:39:25 by wlow              #+#    #+#             */
-/*   Updated: 2021/05/30 08:12:36 by wlow             ###   ########.fr       */
+/*   Updated: 2021/05/30 14:53:36 by lzheng-j         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-char	*fake_ans(char ans[16])
+char	*fake_ans(char *num, char ans[16])
 {
-	ans[0] = 1;
-	ans[1] = 2;
-	ans[2] = 3;
-	ans[3] = 4;
-	ans[4] = 2;
-	ans[5] = 3;
-	ans[6] = 4;
-	ans[7] = 1;
-	ans[8] = 3;
-	ans[9] = 4;
-	ans[10] = 1;
-	ans[11] = 2;
-	ans[12] = 4;
-	ans[13] = 1;
-	ans[14] = 2;
-	ans[15] = 3;
+	char	box[5][5];
+	char	i;
+	char	j;
+	char	k;
+
+	solve_func(num, box);
+	j = 1;
+	k = 0;
+	while (j < 5)
+	{
+		i = 1;
+		while (i < 5)
+		{
+			ans[k] = box[j][i];
+			k++;
+			i++;
+		}
+		j++;
+		k++;
+	}
 	return (ans);
 }
 
