@@ -1,6 +1,6 @@
 int	random_num(void);
 
-char	*permutate_table (int *box, int row)
+char	*permutate_table (char box [5][5], int row)
 {
 	int	sum;
 
@@ -13,5 +13,5 @@ char	*permutate_table (int *box, int row)
 		box[row][4] = random_num();
 		sum = box[row][1] + box[row][2] + box[row][3] + box[row][4];
 	}
-	return (box);
+	return (*box);
 }
