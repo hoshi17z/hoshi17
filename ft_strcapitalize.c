@@ -30,3 +30,11 @@ char *ft_strcapitalize(char *str)
     }
     return (str);
 }
+
+#include <stdio.h>
+
+int main(void)
+{
+	printf("%s", ft_strcapitalize("hwdw disjds ijds"));
+}
+
