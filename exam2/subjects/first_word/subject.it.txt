@@ -1,0 +1,26 @@
+Nome esercizio		: first_word
+File da consegnare	: first_word.c
+Funzioni consentite	: write
+--------------------------------------------------------------------------------
+
+Scrivi un programma che prenda una stringa e ne visualizzi la prima parola, seguita
+da una nuova riga.
+
+Una parola è una sezione di una stringa delimitata da spazi/tabulazioni o dall'inizio/fine della stringa.
+
+Se il numero dei parametri non è 1, o se non ci sono parole, visualizzerà una
+nuova riga.
+
+Esempi:
+
+$> ./first_word 'FOR PONIES !!' | cat -e
+FOR$
+$> ./first_word "this        ...       is sparta, then again, maybe    not" | cat -e
+this$
+$> ./first_word "   " | cat -e
+$
+$> ./first_word "a" "b" | cat -e
+$
+$> ./first_word "  lorem,ipsum  " | cat -e
+lorem,ipsum$
+$>
